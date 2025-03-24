@@ -1,0 +1,372 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #820000;
+    --secondary-color: #5c0000;
+    --accent-color: #F5F5F5;
+    --background-color: #1D1D1D;
+    --border-color: #C0C0C0;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    /* Other existing styles */
+    background-image: url('marvel.jpg\ \(2\).jpg'); /* Replace with your image path */
+    background-size: cover; /* This makes the background cover the entire area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+
+.video-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 400px; /* Adjust this height as needed */
+}
+
+
+header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between elements */
+    margin: 20px 0;
+}
+
+.search-section select {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: var(--primary-color);
+    text-decoration: underline;
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-section input {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 300px;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+.search-section input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.search-section button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.search-section button:hover, .search-section button:focus {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    transform: scale(1.05);
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.movie-card {
+    background: linear-gradient(to bottom, #91160d, var(--primary-color));
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 220px;
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: var(--accent-color);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.movie-card h3, .movie-card p {
+    margin-bottom: 10px;
+}
+
+.movie-card:hover, .movie-card:focus {
+    background: linear-gradient(to bottom, #5A0D7F, var(--secondary-color));
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.watchlist-button {
+    background-color: #e5e5e5; /* Same background as trailer button */
+    color: #333; /* Same text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.watchlist-button:hover {
+    background-color: #d4d4d4; /* Same hover effect */
+}
+
+/* Login and Signup Styles */
+.login-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.login-signup-form {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-signup-form label {
+    margin: 10px 0 5px;
+    color: var(--accent-color);
+}
+
+.login-signup-form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+.login-signup-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.login-signup-form button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-signup-form button:hover, .login-signup-form button:focus {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    margin: 10px 0 5px;
+    color: var(--accent-color);
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+form button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover, form button:focus {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    transform: scale(1.05);
+}
+
+header, .search-section, .movie-container, footer {
+    margin-bottom: 40px;
+}
+
+/* General trailer button styles */
+.trailer-button {
+    background-color: #e5e5e5;
+    color: #333; /* Optional: Adjust text color for better contrast */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
